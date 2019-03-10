@@ -1,0 +1,115 @@
+->conditional formating
+->Arthematic Functions(SUM,SUMIF,SUMIFS,COUNT,COUNTA,COUNTBLANK,COUNTIF,COUNTIFS,PRODUCT,SUMPRODUCT,AVERAGE,AVERAGEIF,AVERAGEIFS,MIN,MAX)
+	SUM(number1,[number2]....) :Adds all the numbers in a range of cells.
+	SUMIF(range,criteria,[sum_range]) :Adds the cells specified by a given condition or criteria.
+	SUMIFS(sum_range,criteria_range1,criteria1,...) :Adds the cells specified by a given set of condition or criteria.
+	COUNT(value1,[value2],...) :Counts the number of cells in a range that contain numbers.
+	COUNTA(value1,[value2],...) :Counts the number of cells in a range that are not empty.
+	COUNTBLANK(range) :Counts the number of empty cells in a specified range of cells.
+	COUNTIF(range,criteria) :Counts the number of cells within a range that meets the given condition.
+	COUNTIFS(criteria_range1,criteria1,...) :Counts the number of cells specified by a given set of condition or criteria.
+	PRODUCT = E2*E3 :Multiplies all the numbers given as arguments.
+	SUMPRODUCT(array1,[array2],[array3],[array4],...) :Returns the sum of the products of corresponding ranges or arrays.
+	AVERAGE(number1,[number2],...) :Returns the average(arithmetic mean) of its arguments.
+	AVERAGEIF(range,criteria,[average_range],...) :Finds average(arithmetic mean) of the cells specified by a given condition or criteria.
+	AVERAGEIFS(average_range,criteria_range1,criteria1,[criteria_range2,criteria2],...) :Finds average(arithmetic mean) of the cells specified  
+                                                                                             by a given set of condition or criteria.
+	MIN(number1,[number2],...) :Returns the smallest number in a set of values.Ignores logical values and text.
+	MAX(number1,[number2],...) :Returns the largest value in a set of values.Ignores logical values and text.
+->Text Functions(len,left,right,mid,lower,upper,proper,substitute,replace,concat & concatenation,TextJoin,exact,clean,char,code,Trim,Find,Search,Doller,Rept,text,value & int)
+	LEN(text) :Returns the number of characters from the text String.
+	LEFT(text,[num_chars]) :Returns the specified number of characters from the start of a text String.
+	RIGHT(text,[num_chars]) :Returns the specified number of characters from the end of a text String.
+	MID(text,start_num,num_chars) :
+	LOWER(text) :Converts all letters in a text String to lower case.
+	UPPER(text) :Converts a text String to all uppercase letters.
+	PROPER(text) :Converts a text String to proper case;The first letter in each word to upper case, and all other letters to lower case.
+	SUBSTITUTE(text,old_text,new_text,[instance_number]) :Replaces existing text with new text in a text String. 
+	REPLACE(old_text,start_num,num_chars,new_text) :Replaces part of a text String with a different text String.
+	CONCAT(text1,[text2],[text3],...) :Concatenates a list or range of text Strings.
+	CONCATENATE(text1,[text2],[text3],...) :Joins several text Strings into one text String.
+	TEXTJOIN(delimiter,ignore_empty,text1,[text2],text3],...) :Concatenates a list or range of text String using delimiter.
+	EXACT(text1,text2) :Checks whether two text Strings are exactly the same,and returns True or False.EXACT is case sensitive.
+	CLEAN(text) :Removes all non-printable characters from text.
+	CHAR(number) :Returns the characters specified by the code number from the character set for your computer.
+	CODE(text) :Returns a numeric code for the first character in a text String,in the character set used by your computer.
+	TRIM(text) :Removes all spaces from a text String,except for single spaces between words.
+	FIND(find_text,within_text,[start_num]) :Returns the starting position of one text String within another text String.Find is case sensitive.
+	SEARCH(find_text,within_text,[start_num]) :Returns the number of the character at which a specific character or text String is first found,
+                                                   reading left to right(non case-sensitive).
+	DOLLER(number,[decimals]) :Converts a number to text,using currency format.
+	REPT(text,number_times) :Repeats text a given number of times.Use REPT to fill a cell with a number of instances of a text String.
+	TEXT(value,format_text) :Converts a value to text in a specific number format.
+	VALUE(text) :Converts a text String that represents a number to a number.
+	INT(text) :Rounds a number down to the nearest integer.
+->Date Functions(Date,Time,Day,Month,Year,Hour,minute,second,today,now,weekday,weeknum,networkworkdays,networkdays.intl,edate,eomonth,datedif)
+	DATE(year,month,day) :Returns the number that represents the date in Microsoft Excel date-time code.
+	TIME(hour,minute,second) :Converts hours,minutes and seconds given as numbers to an Excel serial number formatted with a time format.
+	DAY(serial_number) :Returns the Day of the Month,a number from 1 to 31.
+	MONTH(serial_number) :Returns the Month,a number from 1(January) to 12(December).
+	YEAR(serial_number) :Returns the Year of a date, an integer in the range 1900-9999.
+	HOUR(serial_number) :Returns the Hour as a number from 0(12 A.M.) to 23(11 P.M.).
+	MINUTE(serial_number) :Returns the minute,a number from 0 to 59.
+	SECOND(serial_number) :Returns the second,a number from 0 to 59.
+	TODAY() :Returns the current date formatted as a date.
+	NOW() :Returns the current date and time formatted as a date and time.
+	WEEKDAY(serial_number,[return_type]) :Returns a number from 1 to 7 identifying the day of the week of a date.
+	WEEKNUM(serial_number,[return_type]) :Returns the week number in the year.
+	DATEDIF() :
+	NETWORKDAYS(start_date,end_date,[holydays]) :Returns the number of whole workdays between two dates.
+	NETWORKDAYS.INTL(start_date,end_date,[weekend],[holydays]) :Returns the number of whole workdays between two dates  with custom weekend parameters.
+	EDATE(start_date,months) :Returns the serial number of the date that is the included number of months before or after the start date.
+	EOMONTH(start_date,months) :Returns the serial number of the last day of the month before or after a specified number of months.
+->Logical Functions(And,Or,if,NestedIf)
+	IF(logical_text,[value if true],[value if false]) :Checks whether a condition is met,and returns one value if TRUE,and another value if FALSE.
+	AND(logical1,[logical2],[logical3],[logical4],...) :Checks whether all arguments are TRUE,and returns TRUE if all arguments are TRUE.
+	OR(logical1,[logical2],[logical3],[logical4],...) :Checks whether any of the arguments are TRUE,and returns TRUE or FALSE.Returns False only if all
+                                                           arguments are FALSE.
+->VLOOKUP:-
+	VLOOKUP(lookup_value,table_array,col_index_num,[range_lookup]) :Looks for a value in the leftmost column in a table,and then returns a value in the 
+									same row from a column you specify.By default,the table must be sorted in an ascending order.
+	MATCH(lookup_value,lookup_array,[match_type]) :Returns the relative position of an item in an array that matches a specified value in a specified order.
+->INDEX:-
+	INDEX(array,row_num,[column_num]) :Returns a value or reference of the cell at the intersection of a particular row and column, in a given range.
+	INDEX(array,row_num,[column_num],[area_num]) : same as above.
+->HLOOKUP:-
+	HLOOKUP(lookup_value,table_array,row_index_num,[range_lookup]):Looks for a value in the top row of a table or array of values and returns the value 
+								       in the same column from a row you specify.
+->Offset:-
+	OFFSET(reference,rows,cols,[height],[width]) :Returns a reference to a range that is a given number of rows and columns from a given reference.
+->Choose:-
+	CHOOSE(index_num,value1,[value2]...) :Chooses a value or action to perform from a list of values, based on an index number.
+->Indirect:-
+->Information Functions(ISERR,ISERROR,ISBLANK,ISEVEN,ISEVEN,ISODD,ISFORMULA,ISLOGICAL,ISNONTEXT,ISTEXT)
+	ISERR(value) :Checks whether a value is an error (#VALUE!,#REF!,#DIV/0!,#NUM!,#NAME?,or #NULL!) excluding #N/A, and returns TRUE or FALSE.
+	ISERROR(value) :Checks whether a value is an error (#N/A,#VALUE!,#REF!,#DIV/0!,#NUM!,#NAME?,or #NULL!), and returns TRUE or FALSE.
+	ISBLANK(value) :Checks whether a reference is to an empty cell, and returns TRUE or FALSE.
+	ISEVEN(number) :Returns TRUE if the number is even.
+	ISODD(number) :Returns TRUE if the number is odd.
+	ISFORMULA(reference) :Checks whether a reference is to a cell containing a formula, and returns TRUE or FALSE.
+	ISLOGICAL(value) :Checks whether a value is a logical value (TRUE or FALSE), and returns TRUE or FALSE.
+	ISNONTEXT(value) :Checks whether a value is not text (blank cells are not text), and returns TRUE or FALSE.
+	ISTEXT(value) :Checks whether a value is text, and returns TRUE or FALSE.
+->RAND,RANDBETWEEN,LARGE,SMALL,RANK.EQ,ROUND,ROUNDDOWN,ROUNDUP,INFO,CELL
+	RAND() :Returns a random number greater than or equal to 0 and less than 1, evenly distributed (changes on recalculation).
+	RANDBETWEEN(bottom,top) :Returns a random number between the numbers you specify.
+	LARGE(array,k) :Returns the k-th largest value in a data set. For example , the fifth largest number.
+	SMALL(array,k) :Returns the k-th smallest value in a data set. For example , the fifth smallest number.
+	ROUND(number,num_digits) :Rounds a number to a specified number of digits.
+	ROUNDDOWN(number,num_digits) :Rounds a number down, toward zero.
+	ROUNDUP(number,num_digits) :Rounds a number up, away from zero.
+	INFO(type_text) :Returns information about the current operating environment.
+	CELL(info_type,[reference]) :Returns information about the formatting,location, or contents of the first cell,according to the sheet's reading order,
+																		 in a reference.
+	
+-------------------------
+->IN IMMIDIATE WINDOW TO COUNT NO OF ROWS AND COLUMNS.
+?Range("A50").End(xlUp).ROW
+ 20
+?Range("A1").End(xlDown).Row
+ 20 
+?Rows.Count
+ 1048576 
+?Columns.Count
+ 16384 
+-------------------------
